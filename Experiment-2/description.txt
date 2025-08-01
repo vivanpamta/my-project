@@ -16,6 +16,6 @@ everything in the middle of the screen.
 I gave the outer box a light background color rounded corners and a shadow to make it look like organize.
 Inside this, the inner box has a white background some padding rounded corners and a smaller shadow for a neat look. 
 I also styled the heading to make the balance amount look clear.
-For the buttons I gave them padding and made their corners rounded.
+For the buttons I gave them padding and made their corner rounded.
 I used green color for the Deposit button to show it's for adding money, and red color for the Withdraw
 button to show it's for taking money out.
