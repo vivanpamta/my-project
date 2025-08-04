@@ -1,0 +1,31 @@
+header, footer {
+  grid-area: header;
+  background: lightgreen;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+aside {
+  grid-area: aside;
+  background: var(--sidebar);
+  padding: 10px;
+}
+
+main {
+  grid-area: main;
+  padding: 10px;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+  margin: 5px 0;
+  display: block;
+}
