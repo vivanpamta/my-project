@@ -7,13 +7,18 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  
+  <input type="checkbox" id="themeSwitch" hidden />
+
   <div class="dashboard">
 
     <header class="header">
       <h1>Admin Dashboard</h1>
       <div class="theme-switch">
-        <label for="themeSwitch">Dark Mode</label>
-        <input type="checkbox" id="themeSwitch" />
+        <label for="themeSwitch">
+          <span class="box"></span> Dark Mode
+        </label>
       </div>
     </header>
 
@@ -33,13 +38,6 @@
     </footer>
 
   </div>
-
-  <script>
-  const themeSwitch = document.getElementById('themeSwitch');
-  themeSwitch.addEventListener('change', () => {
-    document.documentElement.setAttribute('data-theme', themeSwitch.checked ? 'dark' : 'light');
-  });
-</script>
 
 </body>
 </html>

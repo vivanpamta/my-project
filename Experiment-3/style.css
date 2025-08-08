@@ -1,4 +1,4 @@
-/* Root variables for light theme */
+/* Light Theme */
 :root {
   --bg: white;
   --text: black;
@@ -9,8 +9,8 @@
   --main-bg: white;
 }
 
-/* Dark theme overrides */
-[data-theme="dark"] {
+/* Dark Theme (activated via checkbox) */
+#themeSwitch:checked ~ .dashboard {
   --bg: #121212;
   --text: white;
   --header-bg: #2f8f4e;
@@ -20,7 +20,7 @@
   --main-bg: #1e1e1e;
 }
 
-/* Reset */
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +33,7 @@ body {
   color: var(--text);
 }
 
-/* Grid Layout */
+/* Layout */
 .dashboard {
   display: grid;
   grid-template-areas:
@@ -56,16 +56,28 @@ body {
   color: white;
 }
 
+/* Theme Switch Styling */
 .theme-switch {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-weight: bold;
+  color: white;
+  cursor: pointer;
 }
 
-.theme-switch input[type="checkbox"] {
-  accent-color: white;
-  cursor: pointer;
+.theme-switch .box {
+  width: 18px;
+  height: 18px;
+  border: 2px solid white;
+  display: inline-block;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+/* Filled box when dark mode is active */
+#themeSwitch:checked ~ .dashboard .theme-switch .box {
+  background-color: white;
 }
 
 /* Sidebar */
@@ -82,7 +94,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Main Content */
+/* Main */
 .main-content {
   grid-area: main;
   padding: 2rem;
