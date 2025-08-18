@@ -1,6 +1,6 @@
 HTML:
 
-1: <div> → A container tag that groups elements together and used here to keep the heading, textarea
+1: <div> → A container tag that groups element together and used here to keep the heading, textarea
 and counter in one block.
 
 2: <h2>Live Character Counter</h2> → A heading tag that displays the title.h2 is smaller than 
