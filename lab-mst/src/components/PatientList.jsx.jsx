@@ -22,7 +22,7 @@ return (
           <p className="text-gray-600">Disease: {patient.disease}</p>
           <button
             onClick={() => removePatient(patient.id)}
-            className="mt-3 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
+            className="mt-3 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-610"
           >
             Remove
           </button>
